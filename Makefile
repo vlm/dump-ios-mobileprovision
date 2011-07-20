@@ -1,5 +1,5 @@
 
-all: src/dump-ios-mobileprovision
+all:
 	make -C src
 
 clean:
