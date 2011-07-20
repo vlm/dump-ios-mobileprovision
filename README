@@ -1,0 +1,9 @@
+
+Extract XML PLIST from binary PKCS#7 iOS mobile provision profile.
+
+COMPILE:
+    make
+
+USAGE:
+    src/dump-ios-mobileprovision <filename.mobileprovision>
+

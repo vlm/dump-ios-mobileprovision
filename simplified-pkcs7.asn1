@@ -1,0 +1,17 @@
+
+Simplified-PKCS7 DEFINITIONS EXPLICIT TAGS ::= BEGIN
+
+SignedXML ::= SEQUENCE {
+    contentType OBJECT IDENTIFIER,  -- { 1 2 840 113549 1 7 2 }
+    content [0] SEQUENCE {
+        version INTEGER,
+        digestAlgorithms    ANY,
+        contentInfo SEQUENCE {
+            contentType OBJECT IDENTIFIER,  -- { 1 2 840 113549 1 7 1 }
+            contentXML [0] OCTET STRING
+        },
+        ...
+    }
+}
+
+END
